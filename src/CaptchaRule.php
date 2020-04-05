@@ -51,7 +51,7 @@ class CaptchaRule implements Rule
 
         if (in_array($ip, $this->skipIps)) return true;
 
-        return no_captcha($this->version)->verify($value, $ip)->isSuccess();
+        return h_captcha($this->version)->verify($value, $ip)->isSuccess();
     }
 
     /**
