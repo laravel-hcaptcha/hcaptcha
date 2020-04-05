@@ -1,0 +1,43 @@
+{
+    "name": "laravel-hcaptcha/hcaptcha",
+    "authors": [
+        {
+            "name": "Shirshak",
+            "email": "8097377+shirshak55@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "arcanedev/php-html": "^4.0",
+        "arcanedev/support": "^7.0",
+        "psr/http-message": "^1.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0",
+        "phpunit/phpunit": "^8.5|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelHCaptcha\\HCaptcha\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaravelHCaptcha\\HCaptcha\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelHCaptcha\\HCaptcha\\HCaptchaServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
