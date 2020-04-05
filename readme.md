@@ -117,16 +117,16 @@ echo $captcha->script();
 
 #### Views
 
-Insert reCAPTCHA inside your form using one of this examples:
+Insert hcaptcha inside your form using one of this examples:
 
 ```php
 <form ...>
     // Other inputs...
-    {!! no_captcha()->display()->toHtml() !!}
+    {!! hcaptcha()->display()->toHtml() !!}
     <input type
 </form>
 
-{{ no_captcha()->script()->toHtml(); }}
+{{ hcaptcha()->script()->toHtml(); }}
 ```
 
 #### Back-end (Controller or somewhere in your project ...)
