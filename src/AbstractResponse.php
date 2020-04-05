@@ -44,10 +44,10 @@ abstract class AbstractResponse
     protected array $errorCodes = [];
 
     //  The hostname of the site where the hCaptcha was solved. Only use for statistics.
-    protected string $hostname;
+    protected ?string $hostname;
 
     //  Timestamp of the challenge load (ISO format yyyy-MM-dd'T'HH:mm:ssZZ)
-    protected string $challengeTs;
+    protected ?string $challengeTs;
 
 
     public function __construct(

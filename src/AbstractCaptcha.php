@@ -34,7 +34,7 @@ abstract class AbstractCaptcha implements HCapchaContract
     protected ?Response $response;
 
 
-    public function __construct(string $secret, string $siteKey, ?string $lang = null)
+    public function __construct(string $secret, string $siteKey, string $lang = "en")
     {
         $this->setSecret($secret);
         $this->setSiteKey($siteKey);
